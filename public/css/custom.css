@@ -1,0 +1,16 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.clearfix {
+	display: block;
+    content: "";
+    clear: both;
+}
+
+.address-contacto {
+	font-size: 1.5rem;
+}
