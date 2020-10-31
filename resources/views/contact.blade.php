@@ -35,42 +35,56 @@
 		============================================= -->
 		<div class="col_full">
 
+			@if( Session::has('errors') )
+			<div class="alert alert-danger" role="alert">
+				<h4 class="alert-heading">¡Ups! Ocurrieron los siguientes errores:</h4>
+				@foreach(Session::get('errors')->all() as $error)
+				<i class="icon-caret-right"></i> {{ $error }} <br>
+				@endforeach
+			</div>
+			@endif
+
+			@if( Session::has('success') )
+			<div class="alert alert-success" role="alert">
+				<h4 class="alert-heading">¡Bien hecho!</h4>
+				<p>{{ Session::get('success') }}.</p>
+				<hr>
+				<p class="mb-0">Recibirás una respuesta tan pronto como nos sea posible.</p>
+			</div>
+			@endif
+
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<h2 class="text-center"><i class="icon-envelope"></i> Envíanos un Email</h2>
-					<div class="form-widget">
-
-						<div class="form-result"></div>
-
-						<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
-
+					<form class="nobottommargin" id="template-contactform" name="contactform" action="/contactoform" method="post">
+							{{ csrf_field() }}
 							<div class="form-process"></div>
 
 							<div class="col_one_third">
 								<label for="template-contactform-name">Nombre <small>*</small></label>
-								<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+								<input type="text" id="template-contactform-name" name="nombre" value="" class="sm-form-control" required />
 							</div>
 
 							<div class="col_one_third">
 								<label for="template-contactform-email">Email <small>*</small></label>
-								<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+								<input type="email" id="template-contactform-email" name="correo" value="" class=" email sm-form-control" required />
 							</div>
 
 							<div class="col_one_third col_last">
 								<label for="template-contactform-phone">Teléfono</label>
-								<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+								<input type="text" id="template-contactform-phone" name="telefono" value="" class="sm-form-control" required />
 							</div>
 
 							<div class="clear"></div>
 
 							<div class="col_two_third">
 								<label for="template-contactform-subject">Asunto <small>*</small></label>
-								<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+								<input type="text" id="template-contactform-subject" name="asunto" value="" class="sm-form-control" required />
 							</div>
 
 							<div class="col_one_third col_last">
 								<label for="template-contactform-service">Servicio</label>
-								<select id="template-contactform-service" name="template-contactform-service" class="sm-form-control">
+								<select id="template-contactform-service" name="servicio" class="sm-form-control">
 									<option value="Vacío" selected disabled>-- Selecciona --</option>
 									<option value="Diseño">Diseño</option>
 									<option value="Fabricación">Fabricación</option>
@@ -83,21 +97,16 @@
 
 							<div class="col_full">
 								<label for="template-contactform-message">Mensaje <small>*</small></label>
-								<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+								<textarea class=" sm-form-control" id="template-contactform-message" name="mensaje" rows="6" cols="30" required></textarea>
 							</div>
 
-							<div class="col_full hidden">
-								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-							</div>
-
-							<div class="col_full">
-								<button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin">Enviar</button>
+							<div class="col_full" align="center">
+								<button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button nomargin">Enviar</button>
 							</div>
 
 							<input type="hidden" name="prefix" value="template-contactform-">
 
 						</form>
-					</div><!--.form-widget-->
 				</div>
 			</div><!--.row-->
 

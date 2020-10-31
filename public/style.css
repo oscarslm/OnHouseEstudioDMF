@@ -1457,7 +1457,7 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 }
 
 #primary-menu.style-4 > ul > li:hover > a,
-#primary-menu.style-4 > ul > li.current > a { border-color: #15144f; }
+#primary-menu.style-4 > ul > li.current > a { border-color: #f2e94d; }
 
 
 /* Primary Menu - Style 5

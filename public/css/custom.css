@@ -5,6 +5,14 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+body {
+	font-size: 1rem;
+}
+
+#content p, #content ul {
+	font-size: 1.15rem;
+}
+
 .clearfix {
 	display: block;
     content: "";
