@@ -21,6 +21,37 @@
 
 	<div class="container clearfix">
 
+		<div class="fslider mb-5" data-easing="easeInQuad">
+			<div class="flexslider">
+				<div class="slider-wrap">
+					<div class="slide" data-thumb="images/slider/boxed/thumbs/2.jpg">
+						<a href="#">
+							<img src="{{ asset('images/architecture/office-1.jpg') }}" alt="@yield('title') Oficina">
+							<div class="flex-caption slider-caption-bg">Oficina 1</div>
+						</a>
+					</div>
+					<div class="slide" data-thumb="images/slider/boxed/thumbs/3.jpg">
+						<a href="#">
+							<img src="{{ asset('images/architecture/office-2.jpg') }}" alt="@yield('title') Oficina">
+							<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">Oficina 2</div>
+						</a>
+					</div><!-- 
+					<div class="slide" data-thumb="images/slider/boxed/thumbs/4.jpg">
+						<a href="#">
+							<img src="images/slider/boxed/4.jpg" alt="Slide 4">
+							<div class="flex-caption slider-caption-bg slider-caption-top-right">Bootstrap 3+ Compatible</div>
+						</a>
+					</div>
+					<div class="slide" data-thumb="images/slider/boxed/thumbs/5.jpg">
+						<a href="#">
+							<img src="images/slider/boxed/5.jpg" alt="Slide 5">
+							<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-bottom-right">eCommerce Design Included</div>
+						</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
 		<div class="title-block">
 			<h2>
 				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
