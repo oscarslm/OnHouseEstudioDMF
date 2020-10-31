@@ -21,7 +21,17 @@
 
 	<div class="container clearfix">
 
-		<p>Sabemos lo importante que es tu negocio, por lo que nos preocupamos y nos ocupamos por que funcione correctamente. ¿Cómo? Mediante un proyecto pensado desde un diseño funcional, original, con personalidad, una correcta y óptima operación, hasta el impacto que va a generar al cliente. Esto mediante un análisis de las necesidades primeramente de ti que vas a brindar un servicio, ¿Qué? ¿Cómo? Tanto del cliente para poder ofrecerle un servicio excepcional. No importa si es un espacio pequeño, mediano o grande, lo importante es transmitir al cliente la seguridad de que están en un lugar especial. Esto también puede ser implementado con la tecnología necesaria para que puedas mantener el control de tu negocio a través de control manual o de voz.</p>
+		<div class="title-block">
+			<h2>
+				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+					Sabemos lo importante que es tu negocio, por lo que nos preocupamos y nos ocupamos por que funcione correctamente.
+				</div>
+			</h2>
+			<span>¿Cómo? Mediante un proyecto pensado desde un diseño funcional, original, con personalidad, una correcta y óptima operación, hasta el impacto que va a generar al cliente.</span>
+		</div>
+
+		<p>Esto mediante un análisis de las necesidades primeramente de ti que vas a brindar un servicio, ¿Qué? ¿Cómo? Tanto del cliente para poder ofrecerle un servicio excepcional. No importa si es un espacio pequeño, mediano o grande, lo importante es transmitir al cliente la seguridad de que están en un lugar especial.</p>
+		<p>Esto también puede ser implementado con la tecnología necesaria para que puedas mantener el control de tu negocio a través de control manual o de voz.</p>
 
 	</div><!--.container-->
 	
