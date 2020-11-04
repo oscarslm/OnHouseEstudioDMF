@@ -28,7 +28,7 @@
 		<div class="title-block">
 			<h2>
 				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
-					El diseño nórdico se basa sobre <span class="t-rotate color">espacios luminosos|paredes blancas|colores muy claros</span>.
+					El diseño nórdico se basa en <span class="t-rotate color">espacios luminosos|paredes blancas|colores muy claros</span>.
 				</div>
 			</h2>
 			<span>Es carente de ornamentación.</span>

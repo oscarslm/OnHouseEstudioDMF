@@ -34,8 +34,8 @@
 			<span>Que recuerda a la naturaleza.</span>
 		</div>
 
-		<p>Toda composición de <strong>@yield('title')</strong> tiene la madera presente de alguna forma en la decoración. Lo más habitual es decorar las paredes con piedra. Se suelen utilizar colores neutros azules, marrones, verdes o tonos cálidos en elementos decorativos y en muros colores blancos o crudos o tonos más fuertes para crear contrastes.</p>
-		<p>En este estilo no puede faltar incorporar flores y plantas. Para finalizar, una decoración rustica no está completa si no disponemos de piezas antiguas, alfombras, cuadros de paisajes o familiares con marcos de madera.</p>
+		<p>Toda composición de <strong>@yield('title')</strong> tiene la madera presente de alguna forma en la decoración. Lo más habitual es decorar las paredes con piedra. Suelen utilizarse colores neutros azules, marrones, verdes o tonos cálidos en elementos decorativos y en muros colores blancos o crudos o tonos más fuertes para crear contrastes.</p>
+		<p>En este estilo no puede faltar la incorporación de flores y plantas. Para finalizar, una decoración rustica no está completa si no disponemos de piezas antiguas, alfombras, cuadros de paisajes o familiares con marcos de madera.</p>
 
 	</div><!--.container-->
 	
