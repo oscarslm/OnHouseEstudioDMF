@@ -27,9 +27,10 @@
 
 		<div class="title-block">
 			<h2>
-				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+				<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 					Este estilo tiene como objetivo lograr un ambiente <span class="t-rotate color">relajado|confortable|tradicional</span>.
 				</div>
+				<div class="d-block d-lg-none">Este estilo tiene como objetivo lograr un ambiente relajado, confortable y tradicional.</div>
 			</h2>
 			<span>Que recuerda a la naturaleza.</span>
 		</div>

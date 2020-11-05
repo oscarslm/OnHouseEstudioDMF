@@ -27,9 +27,10 @@
 
 		<div class="title-block">
 			<h2>
-				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+				<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 					Es una forma de vestir los espacios con un estilo <span class="t-rotate color">original|único|dinámico</span>.
 				</div>
+				<div class="d-block d-lg-none">Es una forma de vestir los espacios con un estilo original, único y dinámico.</div>
 			</h2>
 			<span>Resulta de la combinación y mezcla de distintos estilos.</span>
 		</div>

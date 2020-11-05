@@ -2,6 +2,10 @@
 
 @section('title', 'Diseño de Interiores')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" />
+@endpush
+
 @section('page-title')
 	<section id="page-title">
 		<div class="container clearfix">
@@ -24,9 +28,10 @@
 			<div class="col-lg-6">
 				<div class="title-block">
 					<h2>
-						<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+						<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 							 Nos involucramos en el proceso de mejorar la función y cualidades del espacio interior mediante la manipulación de los <span class="t-rotate color">materiales|texturas|objetos|colores</span>, etc.
 						</div>
+						<div class="d-block d-lg-none">Nos involucramos en el proceso de mejorar la función y cualidades del espacio interior mediante la manipulación de los materiales, texturas, objetos y colores.</div>
 					</h2>
 					<span>Esto, con el fin de construir un ambiente confortable que mejore la calidad de vida y cultura de los ocupantes y sea estéticamente atractivo.</span>
 				</div>
@@ -37,15 +42,15 @@
 			<div class="col-lg-6">
 				<div class="fslider mb-5" data-easing="easeInQuad">
 					<div class="flexslider">
-						<div class="slider-wrap">
-							<div class="slide" data-thumb="images/slider/boxed/thumbs/2.jpg">
-								<a href="#">
+						<div class="slider-wrap" data-lightbox="gallery">
+							<div class="slide" data-thumb="{{ asset('images/architecture/interior-design-1.jpg') }}">
+								<a href="{{ asset('images/architecture/housing-1.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/interior-design-1.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg">@yield('title') 1</div>
 								</a>
 							</div>
-							<div class="slide" data-thumb="images/slider/boxed/thumbs/3.jpg">
-								<a href="#">
+							<div class="slide" data-thumb="{{ asset('images/architecture/interior-design-2.jpg') }}">
+								<a href="{{ asset('images/architecture/housing-2.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/interior-design-2.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">@yield('title')</div>
 								</a>

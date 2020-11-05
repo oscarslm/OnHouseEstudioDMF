@@ -27,9 +27,10 @@
 
 		<div class="title-block">
 			<h2>
-				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+				<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 					Siempre en tendencia y nos lleva hacia la <span class="t-rotate color">simplificación|abstracción|sobriedad</span> en las composiciones.
 				</div>
+				<div class="d-block d-lg-none">Siempre en tendencia y nos lleva hacia la simplificación, abstracción y sobriedad en las composiciones.</div>
 			</h2>
 			<span>Gracias a la ausencia total de adornos innecesarios se logra un purismo en cuanto a forma y estructura.</span>
 		</div>

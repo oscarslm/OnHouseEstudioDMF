@@ -2,6 +2,10 @@
 
 @section('title', 'Remodelaciones')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" />
+@endpush
+
 @section('page-title')
 	<section id="page-title">
 		<div class="container clearfix">
@@ -22,15 +26,15 @@
 
 		<div class="fslider mb-5" data-easing="easeInQuad">
 			<div class="flexslider">
-				<div class="slider-wrap">
-					<div class="slide" data-thumb="images/slider/boxed/thumbs/2.jpg">
-						<a href="#">
+				<div class="slider-wrap" data-lightbox="gallery">
+					<div class="slide" data-thumb="{{ asset('images/architecture/remodeling-1.jpg') }}">
+						<a href="{{ asset('images/architecture/remodeling-1.jpg') }}" data-lightbox="gallery-item">
 							<img src="{{ asset('images/architecture/remodeling-1.jpg') }}" alt="@yield('title') Remodelación">
 							<div class="flex-caption slider-caption-bg">Remodelación 1</div>
 						</a>
 					</div>
-					<div class="slide" data-thumb="images/slider/boxed/thumbs/3.jpg">
-						<a href="#">
+					<div class="slide" data-thumb="{{ asset('images/architecture/remodeling-2.jpg') }}">
+						<a href="{{ asset('images/architecture/remodeling-2.jpg') }}" data-lightbox="gallery-item">
 							<img src="{{ asset('images/architecture/remodeling-2.jpg') }}" alt="@yield('title') Remodelación">
 							<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">Remodelación 2</div>
 						</a>
@@ -53,9 +57,10 @@
 
 		<div class="title-block">
 			<h2>
-				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+				<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 					 Remodelar no solo es <span class="t-rotate color">repintar de otro color los muros|cambiar los muebles de lugar</span>.
 				</div>
+				<div class="d-block d-lg-none">Remodelar no solo es repintar de otro color los muros o cambiar los muebles de lugar.</div>
 			</h2>
 			<span>Remodelamos tu casa, tu departamento, tus oficinas, tu negocio y cualquier lugar que desees.</span>
 		</div>

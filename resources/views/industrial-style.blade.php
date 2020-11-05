@@ -27,9 +27,10 @@
 
 		<div class="title-block">
 			<h2>
-				<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+				<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 					Es un estilo <span class="t-rotate color">muy urbano|despreocupado</span>.
 				</div>
+				<div class="d-block d-lg-none">Es un estilo muy urbano y despreocupado.</div>
 			</h2>
 			<span>Es común observar las instalaciones y estructuras aparentes.</span>
 		</div>

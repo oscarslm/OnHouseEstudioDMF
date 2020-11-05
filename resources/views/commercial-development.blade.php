@@ -2,6 +2,10 @@
 
 @section('title', 'Comercial')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" />
+@endpush
+
 @section('page-title')
 	<section id="page-title">
 		<div class="container clearfix">
@@ -25,9 +29,10 @@
 			<div class="col-lg-6">
 				<div class="title-block">
 					<h2>
-						<div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+						<div class="text-rotater d-none d-lg-block" data-separator="|" data-rotate="bounceIn" data-speed="2500">
 							Sabemos lo importante que es tu negocio, por lo que nos preocupamos y nos ocupamos por que funcione correctamente.
 						</div>
+						<div class="d-block d-lg-none">Sabemos lo importante que es tu negocio, por lo que nos preocupamos y nos ocupamos por que funcione correctamente.</div>
 					</h2>
 					<span>¿Cómo? Mediante un proyecto pensado desde un diseño funcional, original, con personalidad, una correcta y óptima operación, hasta el impacto que va a generar al cliente.</span>
 				</div>
@@ -36,17 +41,17 @@
 				<p>Esto también puede ser implementado con la tecnología necesaria para que puedas mantener el control de tu negocio a través de control manual o de voz.</p>
 			</div>
 			<div class="col-lg-6">
-				 <div class="fslider mb-5" data-easing="easeInQuad">
+				<div class="fslider mb-5" data-easing="easeInQuad">
 					<div class="flexslider">
-						<div class="slider-wrap">
-							<div class="slide" data-thumb="images/slider/boxed/thumbs/2.jpg">
-								<a href="#">
+						<div class="slider-wrap" data-lightbox="gallery">
+							<div class="slide" data-thumb="{{ asset('images/architecture/commercial-1.jpg') }}">
+								<a href="{{ asset('images/architecture/commercial-1.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/commercial-1.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg">@yield('title')</div>
 								</a>
 							</div>
-							<div class="slide" data-thumb="images/slider/boxed/thumbs/3.jpg">
-								<a href="#">
+							<div class="slide" data-thumb="{{ asset('images/architecture/commercial-2.jpg') }}">
+								<a href="{{ asset('images/architecture/commercial-2.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/commercial-2.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">@yield('title')</div>
 								</a>
