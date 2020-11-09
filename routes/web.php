@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 })->name('Inicio');
 
 Route::get('/nosotros', function () {
@@ -101,3 +101,7 @@ Route::get('/mapa-del-sitio', function () {
 
 // Ruta para envío de mail
 Route::post('/contactoform', 'ContactoController@send');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
