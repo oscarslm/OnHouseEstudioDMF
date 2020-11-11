@@ -48,14 +48,8 @@
 									<li><a href="{{ route('Instalación de Mobiliario') }}"><div>Instalación</div></a></li>
 								</ul>
 							</li>
-							<li><a href="#"><div>Domótica</div></a>
-								<ul>
-									<li><a href="{{ route('Proyecto de Domótica') }}"><div>Proyecto</div></a></li>
-									<li><a href="{{ route('Integración de Domótica') }}"><div>Integración</div></a></li>
-									<li><a href="{{ route('Desarrollo de Domótica') }}"><div>Desarrollo</div></a></li>
-								</ul>
-							</li>
-							<li><a href="https://onhousedmf.com/tienda" target="_blank"><div>Tienda</div></a></li>
+							<li><a href="{{ route('Domótica') }}"><div>Domótica</div></a></li>
+							<li><a href="//onhousedmf.com/tienda" target="_blank"><div>Tienda</div></a></li>
 							<!-- <li><a href="#" target="_blank"><div>Blog</div></a></li> -->
 							<li><a href="{{ route('Contacto') }}"><div>Contacto</div></a></li>
 						</ul>

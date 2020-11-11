@@ -71,17 +71,9 @@ Route::get('/mobiliario/instalacion', function () {
     return view('furniture-installation');
 })->name('Instalación de Mobiliario');
 
-Route::get('/domotica/proyecto', function () {
-    return view('home-automation-project');
-})->name('Proyecto de Domótica');
-
-Route::get('/domotica/integracion', function () {
-    return view('home-automation-integration');
-})->name('Integración de Domótica');
-
-Route::get('/domotica/desarrollo', function () {
-    return view('home-automation-development');
-})->name('Desarrollo de Domótica');
+Route::get('/domotica', function () {
+    return view('home-automation');
+})->name('Domótica');
 
 Route::get('/contacto', function () {
     return view('contact');

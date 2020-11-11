@@ -44,13 +44,13 @@
 					<div class="flexslider">
 						<div class="slider-wrap" data-lightbox="gallery">
 							<div class="slide" data-thumb="{{ asset('images/architecture/interior-design-1.jpg') }}">
-								<a href="{{ asset('images/architecture/housing-1.jpg') }}" data-lightbox="gallery-item">
+								<a href="{{ asset('images/architecture/interior-design-1.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/interior-design-1.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg">@yield('title') 1</div>
 								</a>
 							</div>
 							<div class="slide" data-thumb="{{ asset('images/architecture/interior-design-2.jpg') }}">
-								<a href="{{ asset('images/architecture/housing-2.jpg') }}" data-lightbox="gallery-item">
+								<a href="{{ asset('images/architecture/interior-design-2.jpg') }}" data-lightbox="gallery-item">
 									<img src="{{ asset('images/architecture/interior-design-2.jpg') }}" alt="@yield('title')">
 									<div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">@yield('title')</div>
 								</a>
